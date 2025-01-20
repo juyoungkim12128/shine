@@ -16,7 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const data = { userId: username, userPw: password };
 
     // 로그인 요청
-    fetch('https://192.168.3.108:3000/login', {
+    fetch('/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
